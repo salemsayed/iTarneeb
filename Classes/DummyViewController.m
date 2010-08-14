@@ -47,8 +47,9 @@
 	NSLog(@"count of deck is: %d", [newGame.deck.cards count]);
 	
 	for (int i = 0; i < [newGame.player1Cards count]; i++) {
-		NSLog(@"Player 1 card number is %d and of type %@", [[newGame.player1Cards objectAtIndex:i] number], 
-			  [[newGame.player1Cards objectAtIndex:i] cardType]);
+		
+		//NSLog(@"Player 1 card number is %d and of type %@", [[newGame.player1Cards objectAtIndex:i] number], 
+			  //[[newGame.player1Cards objectAtIndex:i] cardType]);
 		
 		//Get filename from attributes
 		NSString *fileName = [[NSString alloc] initWithFormat:@"%d-%@",[[newGame.player1Cards objectAtIndex:i]number], 

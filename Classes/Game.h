@@ -41,9 +41,10 @@
 @property int dakek;
 
 - (id)initWithPlayer1:(NSString *)one Player2:(NSString *)two Player3:(NSString *)three Player4:(NSString *)four;
-- (void)distCards;
-- (void)checkDakek;
-- (void)checkOutOfCall;
+//x=0 if it's the first deal
+- (void)distCards:(int)x;
+- (void)checkDakek:(NSArray *)toBeChecked;
+- (void)checkOutOfCall:(NSArray *)toBeChecked;
 - (void)dealloc;
 
 @end

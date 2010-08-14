@@ -10,6 +10,7 @@
 
 #import "Game.h"
 #import "Deck.h"
+#import "Card.h"
 
 @implementation Game
 
@@ -42,22 +43,35 @@
 	self.outOfCall = 7;
 	
 	//Dist. cards between players
-	[self distCards];
+	[self distCards:0];
 
 	return self;
 }//initWithPlayer1
 
-- (void)distCards {
-
-	//Init. arrays
-	NSMutableArray *tmp1 = [[NSMutableArray alloc] init];
-	NSMutableArray *tmp2 = [[NSMutableArray alloc] init];
-	NSMutableArray *tmp3 = [[NSMutableArray alloc] init];
-	NSMutableArray *tmp4 = [[NSMutableArray alloc] init];
-	self.player1Cards = tmp1;
-	self.player2Cards = tmp2;
-	self.player3Cards = tmp3;
-	self.player4Cards = tmp4;
+- (void)distCards:(int)x {
+	
+	if (x == 0) {
+		//Init. arrays
+		NSMutableArray *tmp1 = [[NSMutableArray alloc] init];
+		NSMutableArray *tmp2 = [[NSMutableArray alloc] init];
+		NSMutableArray *tmp3 = [[NSMutableArray alloc] init];
+		NSMutableArray *tmp4 = [[NSMutableArray alloc] init];
+		
+		self.player1Cards = tmp1;
+		self.player2Cards = tmp2;
+		self.player3Cards = tmp3;
+		self.player4Cards = tmp4;
+		
+		[tmp1 release];
+		[tmp2 release];
+		[tmp3 release];
+		[tmp4 release];
+	}
+	
+	[player1Cards removeAllObjects];
+	[player2Cards removeAllObjects];
+	[player3Cards removeAllObjects];
+	[player4Cards removeAllObjects];
 	
 	//Temp. variable holding random number
 	int r;
@@ -94,7 +108,7 @@
 			[self.deck.cards removeObjectAtIndex:r];
 		}
 	}
-	//TODO: Infinite loop be sabab size of deck
+
 	//Player 4 cards
 	while ([player4Cards count] < 13) {
 		r = arc4random() % 52;
@@ -106,16 +120,90 @@
 		}
 	}
 	
-	[self checkDakek];
-	[self checkOutOfCall];
+	//Check if one of the players is 'dakek'
+	[self checkDakek:player1Cards];
+	[self checkDakek:player2Cards];
+	[self checkDakek:player3Cards];
+	[self checkDakek:player4Cards];
+	
+	//Check if one of the players is 'out of call'
+	[self checkOutOfCall:player1Cards];
+	[self checkOutOfCall:player2Cards];
+	[self checkOutOfCall:player3Cards];
+	[self checkOutOfCall:player4Cards];
 	
 }//distCards
 
-- (void)checkDakek {
-}
+ /*
+ A player is dakek if the sum of points in his/her hands
+ is less than the defined number of property 'dakek'
+ */
+- (void)checkDakek:(NSArray *)toBeChecked {
+	
+	//Temp. variable to hold number of points in one's hand
+	int pointCount = 0;
+	
+	for (Card *tmp in toBeChecked) {
+		switch (tmp.number) {
+			case 1:
+				pointCount = pointCount + 4;
+				break;
+			case 11:
+				pointCount++;
+				break;
+			case 12:
+				pointCount = pointCount + 2;
+				break;
+			case 13:
+				pointCount = pointCount + 3;
+				break;
+				
+			default:
+				break;
+		}
+	}
+	if (pointCount < self.dakek) {
 
-- (void)checkOutOfCall {
-}
+		[self distCards:1];
+	}
+	
+}//checkDakek
+
+ /*
+ A player if out of call if he/she has more than x cards
+ of the same type, where x is the property 'outOfCall
+ */
+- (void)checkOutOfCall:(NSArray *)toBeChecked {
+	
+	//Temp. variable
+	int numberOfSpades = 0;
+	int numberOfDiamonds = 0;
+	int numberOfHearts = 0;
+	int numberOfClubs = 0;
+	
+	//Temp. variables
+	Card *tmp;
+	NSString *cardType = [tmp cardType];
+	
+	for (tmp in toBeChecked) {
+	
+		if ([cardType compare:@"trefl"]) {
+			numberOfClubs++;
+		}else if ([cardType compare:@"karo"]) {
+			numberOfDiamonds++;
+		}else if ([cardType compare:@"heart"]) {
+			numberOfHearts++;
+		}else if ([cardType compare:@"spade"]) {
+			numberOfSpades++;
+		}
+	}
+	
+	if (numberOfClubs > self.outOfCall || numberOfDiamonds > self.outOfCall 
+		|| numberOfHearts > self.outOfCall || numberOfSpades > self.outOfCall) {
+		[self distCards:1];
+	}
+	
+}//checkOutOfCall
 
 - (void)dealloc {
 	[deck release];
