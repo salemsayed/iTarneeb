@@ -11,7 +11,8 @@
 
 @interface Card : NSObject {
 
-	//karo, heart, spade, trefl
+	//karo, heart, spade, trefl and null which is 
+	//used to denote an empty place
 	NSString *cardType;
 	//11 = J, 12 == Q, 13 == K
 	NSUInteger number;

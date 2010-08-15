@@ -37,6 +37,7 @@
 	//Init. deck
 	Deck *temp = [[Deck alloc] initWithCards];
 	deck = temp;
+	//[temp release];
 	
 	//Default settings
 	self.dakek = 4;
@@ -46,6 +47,7 @@
 	[self distCards:0];
 
 	return self;
+	
 }//initWithPlayer1
 
 - (void)distCards:(int)x {
@@ -66,6 +68,11 @@
 		[tmp2 release];
 		[tmp3 release];
 		[tmp4 release];
+		
+	}else if (x == 1) {
+		Deck *newDeck = [[Deck alloc] initWithCards];
+		self.deck = newDeck;
+		[newDeck release];
 	}
 	
 	[player1Cards removeAllObjects];
@@ -120,6 +127,8 @@
 		}
 	}
 	
+	//TODO: Arrange cards with respect to types and numbers
+	
 	//Check if one of the players is 'dakek'
 	[self checkDakek:player1Cards];
 	[self checkDakek:player2Cards];
@@ -163,7 +172,7 @@
 		}
 	}
 	if (pointCount < self.dakek) {
-
+		NSLog(@"dakek happened!");
 		[self distCards:1];
 	}
 	
@@ -183,23 +192,24 @@
 	
 	//Temp. variables
 	Card *tmp;
-	NSString *cardType = [tmp cardType];
+	NSString *cardType;
 	
 	for (tmp in toBeChecked) {
-	
-		if ([cardType compare:@"trefl"]) {
+		cardType = [tmp cardType];
+		if ([cardType isEqualToString:@"trefl"] ) {
 			numberOfClubs++;
-		}else if ([cardType compare:@"karo"]) {
+		}else if ([cardType isEqualToString:@"karo"]) {
 			numberOfDiamonds++;
-		}else if ([cardType compare:@"heart"]) {
+		}else if ([cardType isEqualToString:@"heart"]) {
 			numberOfHearts++;
-		}else if ([cardType compare:@"spade"]) {
+		}else if ([cardType isEqualToString:@"spade"]) {
 			numberOfSpades++;
 		}
 	}
 	
 	if (numberOfClubs > self.outOfCall || numberOfDiamonds > self.outOfCall 
 		|| numberOfHearts > self.outOfCall || numberOfSpades > self.outOfCall) {
+		NSLog(@"out of call happened!");
 		[self distCards:1];
 	}
 	
@@ -207,10 +217,17 @@
 
 - (void)dealloc {
 	[deck release];
+	
+	[player1Name release];
+	[player2Name release];
+	[player3Name release];
+	[player4Name release];
+	
 	[player1Cards release];
 	[player2Cards release];
 	[player3Cards release];
 	[player4Cards release];
+	
 	[super dealloc];
 }//dealloc
 

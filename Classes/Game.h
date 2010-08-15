@@ -41,7 +41,7 @@
 @property int dakek;
 
 - (id)initWithPlayer1:(NSString *)one Player2:(NSString *)two Player3:(NSString *)three Player4:(NSString *)four;
-//x=0 if it's the first deal
+//x=0 if it's the first deal, if re-deal send x = 1 to make a new deck
 - (void)distCards:(int)x;
 - (void)checkDakek:(NSArray *)toBeChecked;
 - (void)checkOutOfCall:(NSArray *)toBeChecked;
