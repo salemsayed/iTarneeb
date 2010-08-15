@@ -92,10 +92,12 @@
 - (void)viewDidLoad {
 	Game *newGame = [[Game alloc] initWithPlayer1:@"Salem" Player2:@"Abdel" Player3:@"Gawad" Player4:@"Mahdy"];
 
+	/*
 	self.player1Label.text = [newGame player1Name];
 	self.player2Label.text = [newGame player2Name];
 	self.player3Label.text = [newGame player3Name];
 	self.player4Label.text = [newGame player4Name];
+	*/
 	
 	[self drawCards:newGame];
 
@@ -115,49 +117,71 @@
 			
 		//Construct image
 		UIImage *img = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource:fileName ofType:@"png"]];
+		
+		//Get filename from attributes
+		NSString *fileNameHigh = [[NSString alloc] initWithFormat:@"%d-%@-high",[[thisGame.player1Cards objectAtIndex:i]number], 
+							  [[thisGame.player1Cards objectAtIndex:i]cardType]];
+
+		//Construct image
+		UIImage *imgHigh = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource:fileNameHigh ofType:@"png"]];
+
 			
 		[fileName release];
+		[fileNameHigh release];
 		
 		//Set image
 		switch (i) {
 			case 0:
-				player11.image = img;
+				[player11 setImage:img forState:UIControlStateNormal] ;
+				[player11 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 1:
-				player12.image = img;
+				[player12 setImage:img forState:UIControlStateNormal] ;
+				[player12 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 2:
-				player13.image = img;
+				[player13 setImage:img forState:UIControlStateNormal] ;
+				[player13 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 3:
-				player14.image = img;
+				[player14 setImage:img forState:UIControlStateNormal] ;
+				[player14 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 4:
-				player15.image = img;
+				[player15 setImage:img forState:UIControlStateNormal] ;
+				[player15 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 5:
-				player16.image = img;
+				[player16 setImage:img forState:UIControlStateNormal] ;
+				[player16 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 6:
-				player17.image = img;
+				[player17 setImage:img forState:UIControlStateNormal] ;
+				[player17 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 7:
-				player18.image = img;
+				[player18 setImage:img forState:UIControlStateNormal] ;
+				[player18 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 8:
-				player19.image = img;
+				[player19 setImage:img forState:UIControlStateNormal] ;
+				[player19 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 9:
-				player110.image = img;
+				[player110 setImage:img forState:UIControlStateNormal] ;
+				[player110 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 10:
-				player111.image = img;
+				[player111 setImage:img forState:UIControlStateNormal] ;
+				[player111 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 11:
-				player112.image = img;
+				[player112 setImage:img forState:UIControlStateNormal] ;
+				[player112 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 12:
-				player113.image = img;
+				[player113 setImage:img forState:UIControlStateNormal] ;
+				[player113 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 				
 			default:
@@ -178,48 +202,70 @@
 		//Construct image
 		UIImage *img = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource:fileName ofType:@"png"]];
 		
+		//Get filename from attributes
+		NSString *fileNameHigh = [[NSString alloc] initWithFormat:@"%d-%@-high",[[thisGame.player1Cards objectAtIndex:i]number], 
+								  [[thisGame.player1Cards objectAtIndex:i]cardType]];
+		
+		//Construct image
+		UIImage *imgHigh = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource:fileNameHigh ofType:@"png"]];
+		
+		
 		[fileName release];
+		[fileNameHigh release];
 		
 		//Set image
 		switch (i) {
 			case 0:
-				player21.image = img;
+				[player21 setImage:img forState:UIControlStateNormal] ;
+				[player21 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 1:
-				player22.image = img;
+				[player22 setImage:img forState:UIControlStateNormal] ;
+				[player22 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 2:
-				player23.image = img;
+				[player23 setImage:img forState:UIControlStateNormal] ;
+				[player23 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 3:
-				player24.image = img;
+				[player24 setImage:img forState:UIControlStateNormal] ;
+				[player24 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 4:
-				player25.image = img;
+				[player25 setImage:img forState:UIControlStateNormal] ;
+				[player25 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 5:
-				player26.image = img;
+				[player26 setImage:img forState:UIControlStateNormal] ;
+				[player26 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 6:
-				player27.image = img;
+				[player27 setImage:img forState:UIControlStateNormal] ;
+				[player27 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 7:
-				player28.image = img;
+				[player28 setImage:img forState:UIControlStateNormal] ;
+				[player28 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 8:
-				player29.image = img;
+				[player29 setImage:img forState:UIControlStateNormal] ;
+				[player29 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 9:
-				player210.image = img;
+				[player210 setImage:img forState:UIControlStateNormal] ;
+				[player210 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 10:
-				player211.image = img;
+				[player211 setImage:img forState:UIControlStateNormal] ;
+				[player211 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 11:
-				player212.image = img;
+				[player212 setImage:img forState:UIControlStateNormal] ;
+				[player212 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 12:
-				player213.image = img;
+				[player213 setImage:img forState:UIControlStateNormal] ;
+				[player213 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 				
 			default:
@@ -240,54 +286,76 @@
 		//Construct image
 		UIImage *img = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource:fileName ofType:@"png"]];
 		
+		//Get filename from attributes
+		NSString *fileNameHigh = [[NSString alloc] initWithFormat:@"%d-%@-high",[[thisGame.player1Cards objectAtIndex:i]number], 
+								  [[thisGame.player1Cards objectAtIndex:i]cardType]];
+		
+		//Construct image
+		UIImage *imgHigh = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource:fileNameHigh ofType:@"png"]];
+		
+		
 		[fileName release];
-
+		[fileNameHigh release];
+		
 		//Set image
 		switch (i) {
 			case 0:
-				player31.image = img;
+				[player31 setImage:img forState:UIControlStateNormal] ;
+				[player31 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 1:
-				player32.image = img;
+				[player32 setImage:img forState:UIControlStateNormal] ;
+				[player32 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 2:
-				player33.image = img;
+				[player33 setImage:img forState:UIControlStateNormal] ;
+				[player33 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 3:
-				player34.image = img;
+				[player34 setImage:img forState:UIControlStateNormal] ;
+				[player34 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 4:
-				player35.image = img;
+				[player35 setImage:img forState:UIControlStateNormal] ;
+				[player35 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 5:
-				player36.image = img;
+				[player36 setImage:img forState:UIControlStateNormal] ;
+				[player36 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 6:
-				player37.image = img;
+				[player37 setImage:img forState:UIControlStateNormal] ;
+				[player37 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 7:
-				player38.image = img;
+				[player38 setImage:img forState:UIControlStateNormal] ;
+				[player38 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 8:
-				player39.image = img;
+				[player39 setImage:img forState:UIControlStateNormal] ;
+				[player39 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 9:
-				player310.image = img;
+				[player310 setImage:img forState:UIControlStateNormal] ;
+				[player310 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 10:
-				player311.image = img;
+				[player311 setImage:img forState:UIControlStateNormal] ;
+				[player311 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 11:
-				player312.image = img;
+				[player312 setImage:img forState:UIControlStateNormal] ;
+				[player312 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 12:
-				player313.image = img;
+				[player313 setImage:img forState:UIControlStateNormal] ;
+				[player313 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 				
 			default:
 				
 				break;
-		}		
+		}			
 	}
 	
 	//Player4 Cards
@@ -302,48 +370,70 @@
 		//Construct image
 		UIImage *img = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource:fileName ofType:@"png"]];
 		
+		//Get filename from attributes
+		NSString *fileNameHigh = [[NSString alloc] initWithFormat:@"%d-%@-high",[[thisGame.player1Cards objectAtIndex:i]number], 
+								  [[thisGame.player1Cards objectAtIndex:i]cardType]];
+		
+		//Construct image
+		UIImage *imgHigh = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource:fileNameHigh ofType:@"png"]];
+		
+		
 		[fileName release];
+		[fileNameHigh release];
 		
 		//Set image
 		switch (i) {
 			case 0:
-				player41.image = img;
+				[player41 setImage:img forState:UIControlStateNormal] ;
+				[player41 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 1:
-				player42.image = img;
+				[player42 setImage:img forState:UIControlStateNormal] ;
+				[player42 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 2:
-				player43.image = img;
+				[player43 setImage:img forState:UIControlStateNormal] ;
+				[player43 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 3:
-				player44.image = img;
+				[player44 setImage:img forState:UIControlStateNormal] ;
+				[player44 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 4:
-				player45.image = img;
+				[player45 setImage:img forState:UIControlStateNormal] ;
+				[player45 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 5:
-				player46.image = img;
+				[player46 setImage:img forState:UIControlStateNormal] ;
+				[player46 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 6:
-				player47.image = img;
+				[player47 setImage:img forState:UIControlStateNormal] ;
+				[player47 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 7:
-				player48.image = img;
+				[player48 setImage:img forState:UIControlStateNormal] ;
+				[player48 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 8:
-				player49.image = img;
+				[player49 setImage:img forState:UIControlStateNormal] ;
+				[player49 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 9:
-				player410.image = img;
+				[player410 setImage:img forState:UIControlStateNormal] ;
+				[player410 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 10:
-				player411.image = img;
+				[player411 setImage:img forState:UIControlStateNormal] ;
+				[player411 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 11:
-				player412.image = img;
+				[player412 setImage:img forState:UIControlStateNormal] ;
+				[player412 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 			case 12:
-				player413.image = img;
+				[player413 setImage:img forState:UIControlStateNormal] ;
+				[player413 setImage:imgHigh forState:UIControlStateHighlighted] ;
 				break;
 				
 			default:
