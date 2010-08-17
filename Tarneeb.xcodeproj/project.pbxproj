@@ -122,6 +122,40 @@
 		7C8019DC1218443100BE995C /* 13-karo-high.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8019A81218443100BE995C /* 13-karo-high.png */; };
 		7C8019DD1218443100BE995C /* 13-spade-high.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8019A91218443100BE995C /* 13-spade-high.png */; };
 		7C8019DE1218443100BE995C /* 13-trefl-high.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8019AA1218443100BE995C /* 13-trefl-high.png */; };
+		7C801A4412198D3700BE995C /* INFSmartFoxBuddy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A2212198D3700BE995C /* INFSmartFoxBuddy.m */; };
+		7C801A4512198D3700BE995C /* INFSmartFoxRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A2312198D3700BE995C /* INFSmartFoxRoom.m */; };
+		7C801A4612198D3700BE995C /* INFSmartFoxRoomCreateParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A2412198D3700BE995C /* INFSmartFoxRoomCreateParams.m */; };
+		7C801A4712198D3700BE995C /* INFSmartFoxRoomVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A2512198D3700BE995C /* INFSmartFoxRoomVariable.m */; };
+		7C801A4812198D3700BE995C /* INFSmartFoxUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A2612198D3700BE995C /* INFSmartFoxUser.m */; };
+		7C801A4912198D3700BE995C /* INFSmartFoxZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A2712198D3700BE995C /* INFSmartFoxZone.m */; };
+		7C801A4A12198D3700BE995C /* INFSmartFoxExtHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A2912198D3700BE995C /* INFSmartFoxExtHandler.m */; };
+		7C801A4B12198D3700BE995C /* INFSmartFoxSFSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A2A12198D3700BE995C /* INFSmartFoxSFSEvent.m */; };
+		7C801A4C12198D3700BE995C /* INFSmartFoxSysHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A2B12198D3700BE995C /* INFSmartFoxSysHandler.m */; };
+		7C801A4D12198D3700BE995C /* SFSHttpConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A2D12198D3700BE995C /* SFSHttpConnection.m */; };
+		7C801A4E12198D3700BE995C /* INFSmartFoxiPhoneClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A2E12198D3700BE995C /* INFSmartFoxiPhoneClient.m */; };
+		7C801A4F12198D3700BE995C /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A3012198D3700BE995C /* NSObject+SBJSON.m */; };
+		7C801A5012198D3700BE995C /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A3112198D3700BE995C /* NSString+SBJSON.m */; };
+		7C801A5112198D3700BE995C /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A3212198D3700BE995C /* SBJSON.m */; };
+		7C801A5212198D3700BE995C /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A3312198D3700BE995C /* SBJsonBase.m */; };
+		7C801A5312198D3700BE995C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A3412198D3700BE995C /* SBJsonParser.m */; };
+		7C801A5412198D3700BE995C /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A3512198D3700BE995C /* SBJsonWriter.m */; };
+		7C801A5512198D3700BE995C /* NSObjectAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A3712198D3700BE995C /* NSObjectAddition.m */; };
+		7C801A5612198D3700BE995C /* NStreamAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A3812198D3700BE995C /* NStreamAddition.m */; };
+		7C801A5712198D3700BE995C /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A3A12198D3700BE995C /* CXMLDocument.m */; };
+		7C801A5812198D3700BE995C /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A3B12198D3700BE995C /* CXMLDocument_PrivateExtensions.m */; };
+		7C801A5912198D3700BE995C /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A3C12198D3700BE995C /* CXMLElement.m */; };
+		7C801A5A12198D3700BE995C /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A3D12198D3700BE995C /* CXMLNode.m */; };
+		7C801A5B12198D3700BE995C /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A3E12198D3700BE995C /* CXMLNode_PrivateExtensions.m */; };
+		7C801A5C12198D3700BE995C /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A3F12198D3700BE995C /* CXMLNode_XPathExtensions.m */; };
+		7C801A5D12198D3700BE995C /* INFSendBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A4112198D3700BE995C /* INFSendBuffer.m */; };
+		7C801A5E12198D3700BE995C /* INFSmartFoxEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A4212198D3700BE995C /* INFSmartFoxEntities.m */; };
+		7C801A5F12198D3700BE995C /* INFSmartFoxObjectSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A4312198D3700BE995C /* INFSmartFoxObjectSerializer.m */; };
+		7C801A6212198D6D00BE995C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C801A6112198D6D00BE995C /* CFNetwork.framework */; };
+		7C801A6F121990D900BE995C /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801A6D121990D900BE995C /* LogInViewController.m */; };
+		7C801A70121990D900BE995C /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C801A6E121990D900BE995C /* LogInViewController.xib */; };
+		7C801AC11219966A00BE995C /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7C801AC01219966A00BE995C /* config.xml */; };
+		7C801BA6121A8EF600BE995C /* RoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C801BA4121A8EF600BE995C /* RoomViewController.m */; };
+		7C801BA7121A8EF600BE995C /* RoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C801BA5121A8EF600BE995C /* RoomViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -247,6 +281,74 @@
 		7C8019A81218443100BE995C /* 13-karo-high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "13-karo-high.png"; sourceTree = "<group>"; };
 		7C8019A91218443100BE995C /* 13-spade-high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "13-spade-high.png"; sourceTree = "<group>"; };
 		7C8019AA1218443100BE995C /* 13-trefl-high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "13-trefl-high.png"; sourceTree = "<group>"; };
+		7C8019FA12198D3700BE995C /* INFSmartFoxBuddy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxBuddy.h; sourceTree = "<group>"; };
+		7C8019FB12198D3700BE995C /* INFSmartFoxRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxRoom.h; sourceTree = "<group>"; };
+		7C8019FC12198D3700BE995C /* INFSmartFoxRoomCreateParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxRoomCreateParams.h; sourceTree = "<group>"; };
+		7C8019FD12198D3700BE995C /* INFSmartFoxRoomVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxRoomVariable.h; sourceTree = "<group>"; };
+		7C8019FE12198D3700BE995C /* INFSmartFoxUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxUser.h; sourceTree = "<group>"; };
+		7C8019FF12198D3700BE995C /* INFSmartFoxZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxZone.h; sourceTree = "<group>"; };
+		7C801A0112198D3700BE995C /* INFSmartFoxExtHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxExtHandler.h; sourceTree = "<group>"; };
+		7C801A0212198D3700BE995C /* INFSmartFoxIMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxIMessageHandler.h; sourceTree = "<group>"; };
+		7C801A0312198D3700BE995C /* INFSmartFoxISFSEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxISFSEvents.h; sourceTree = "<group>"; };
+		7C801A0412198D3700BE995C /* INFSmartFoxSFSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxSFSEvent.h; sourceTree = "<group>"; };
+		7C801A0512198D3700BE995C /* INFSmartFoxSysHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxSysHandler.h; sourceTree = "<group>"; };
+		7C801A0712198D3700BE995C /* SFSHttpConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSHttpConnection.h; sourceTree = "<group>"; };
+		7C801A0812198D3700BE995C /* INFSmartFoxiPhoneClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxiPhoneClient.h; sourceTree = "<group>"; };
+		7C801A0A12198D3700BE995C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		7C801A0B12198D3700BE995C /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		7C801A0C12198D3700BE995C /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		7C801A0D12198D3700BE995C /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		7C801A0E12198D3700BE995C /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		7C801A0F12198D3700BE995C /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		7C801A1012198D3700BE995C /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		7C801A1212198D3700BE995C /* NSObjectAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectAddition.h; sourceTree = "<group>"; };
+		7C801A1312198D3700BE995C /* NSStreamAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStreamAddition.h; sourceTree = "<group>"; };
+		7C801A1512198D3700BE995C /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		7C801A1612198D3700BE995C /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		7C801A1712198D3700BE995C /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		7C801A1812198D3700BE995C /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		7C801A1912198D3700BE995C /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		7C801A1A12198D3700BE995C /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		7C801A1B12198D3700BE995C /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		7C801A1D12198D3700BE995C /* INFSendBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSendBuffer.h; sourceTree = "<group>"; };
+		7C801A1E12198D3700BE995C /* INFSmartFoxEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxEntities.h; sourceTree = "<group>"; };
+		7C801A1F12198D3700BE995C /* INFSmartFoxObjectSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFSmartFoxObjectSerializer.h; sourceTree = "<group>"; };
+		7C801A2212198D3700BE995C /* INFSmartFoxBuddy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxBuddy.m; sourceTree = "<group>"; };
+		7C801A2312198D3700BE995C /* INFSmartFoxRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxRoom.m; sourceTree = "<group>"; };
+		7C801A2412198D3700BE995C /* INFSmartFoxRoomCreateParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxRoomCreateParams.m; sourceTree = "<group>"; };
+		7C801A2512198D3700BE995C /* INFSmartFoxRoomVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxRoomVariable.m; sourceTree = "<group>"; };
+		7C801A2612198D3700BE995C /* INFSmartFoxUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxUser.m; sourceTree = "<group>"; };
+		7C801A2712198D3700BE995C /* INFSmartFoxZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxZone.m; sourceTree = "<group>"; };
+		7C801A2912198D3700BE995C /* INFSmartFoxExtHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxExtHandler.m; sourceTree = "<group>"; };
+		7C801A2A12198D3700BE995C /* INFSmartFoxSFSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxSFSEvent.m; sourceTree = "<group>"; };
+		7C801A2B12198D3700BE995C /* INFSmartFoxSysHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxSysHandler.m; sourceTree = "<group>"; };
+		7C801A2D12198D3700BE995C /* SFSHttpConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSHttpConnection.m; sourceTree = "<group>"; };
+		7C801A2E12198D3700BE995C /* INFSmartFoxiPhoneClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxiPhoneClient.m; sourceTree = "<group>"; };
+		7C801A3012198D3700BE995C /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		7C801A3112198D3700BE995C /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		7C801A3212198D3700BE995C /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		7C801A3312198D3700BE995C /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		7C801A3412198D3700BE995C /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		7C801A3512198D3700BE995C /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		7C801A3712198D3700BE995C /* NSObjectAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectAddition.m; sourceTree = "<group>"; };
+		7C801A3812198D3700BE995C /* NStreamAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NStreamAddition.m; sourceTree = "<group>"; };
+		7C801A3A12198D3700BE995C /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		7C801A3B12198D3700BE995C /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		7C801A3C12198D3700BE995C /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		7C801A3D12198D3700BE995C /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		7C801A3E12198D3700BE995C /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		7C801A3F12198D3700BE995C /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		7C801A4112198D3700BE995C /* INFSendBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSendBuffer.m; sourceTree = "<group>"; };
+		7C801A4212198D3700BE995C /* INFSmartFoxEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxEntities.m; sourceTree = "<group>"; };
+		7C801A4312198D3700BE995C /* INFSmartFoxObjectSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFSmartFoxObjectSerializer.m; sourceTree = "<group>"; };
+		7C801A6112198D6D00BE995C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7C801A6C121990D900BE995C /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogInViewController.h; path = ../LogInViewController.h; sourceTree = "<group>"; };
+		7C801A6D121990D900BE995C /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogInViewController.m; path = ../LogInViewController.m; sourceTree = "<group>"; };
+		7C801A6E121990D900BE995C /* LogInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		7C801AC01219966A00BE995C /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		7C801BA3121A8EF600BE995C /* RoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomViewController.h; sourceTree = "<group>"; };
+		7C801BA4121A8EF600BE995C /* RoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomViewController.m; sourceTree = "<group>"; };
+		7C801BA5121A8EF600BE995C /* RoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RoomViewController.xib; path = Classes/RoomViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Tarneeb-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tarneeb-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,6 +360,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				7C801A6212198D6D00BE995C /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,11 +370,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7C8019F812198D3700BE995C /* SFS Header */,
+				7C801A2012198D3700BE995C /* SFS Source */,
+				7C801A71121990F600BE995C /* Tarneeb Views */,
 				7C5754F912143B19007AEF4D /* Tarneeb Logic */,
-				1D3623240D0F684500981E51 /* TarneebAppDelegate.h */,
-				1D3623250D0F684500981E51 /* TarneebAppDelegate.m */,
-				7C5754D9121439EC007AEF4D /* DummyViewController.h */,
-				7C5754DA121439EC007AEF4D /* DummyViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -292,6 +394,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				7C801A6112198D6D00BE995C /* CFNetwork.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -308,9 +411,12 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7C801AC01219966A00BE995C /* config.xml */,
 				7C8019DF1218443D00BE995C /* High pics */,
 				7C80196F1218442100BE995C /* Small pics */,
 				7C5754DB121439EC007AEF4D /* DummyViewController.xib */,
+				7C801BA5121A8EF600BE995C /* RoomViewController.xib */,
+				7C801A6E121990D900BE995C /* LogInViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Tarneeb-Info.plist */,
 			);
@@ -456,6 +562,209 @@
 				7C8019AA1218443100BE995C /* 13-trefl-high.png */,
 			);
 			name = "High pics";
+			sourceTree = "<group>";
+		};
+		7C8019F812198D3700BE995C /* SFS Header */ = {
+			isa = PBXGroup;
+			children = (
+				7C8019F912198D3700BE995C /* Data */,
+				7C801A0012198D3700BE995C /* Handlers */,
+				7C801A0612198D3700BE995C /* Http */,
+				7C801A0812198D3700BE995C /* INFSmartFoxiPhoneClient.h */,
+				7C801A0912198D3700BE995C /* JSON */,
+				7C801A1112198D3700BE995C /* Mac */,
+				7C801A1412198D3700BE995C /* TouchXML */,
+				7C801A1C12198D3700BE995C /* Util */,
+			);
+			name = "SFS Header";
+			path = ../Header;
+			sourceTree = "<group>";
+		};
+		7C8019F912198D3700BE995C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7C8019FA12198D3700BE995C /* INFSmartFoxBuddy.h */,
+				7C8019FB12198D3700BE995C /* INFSmartFoxRoom.h */,
+				7C8019FC12198D3700BE995C /* INFSmartFoxRoomCreateParams.h */,
+				7C8019FD12198D3700BE995C /* INFSmartFoxRoomVariable.h */,
+				7C8019FE12198D3700BE995C /* INFSmartFoxUser.h */,
+				7C8019FF12198D3700BE995C /* INFSmartFoxZone.h */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7C801A0012198D3700BE995C /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A0112198D3700BE995C /* INFSmartFoxExtHandler.h */,
+				7C801A0212198D3700BE995C /* INFSmartFoxIMessageHandler.h */,
+				7C801A0312198D3700BE995C /* INFSmartFoxISFSEvents.h */,
+				7C801A0412198D3700BE995C /* INFSmartFoxSFSEvent.h */,
+				7C801A0512198D3700BE995C /* INFSmartFoxSysHandler.h */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		7C801A0612198D3700BE995C /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A0712198D3700BE995C /* SFSHttpConnection.h */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		7C801A0912198D3700BE995C /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A0A12198D3700BE995C /* JSON.h */,
+				7C801A0B12198D3700BE995C /* NSObject+SBJSON.h */,
+				7C801A0C12198D3700BE995C /* NSString+SBJSON.h */,
+				7C801A0D12198D3700BE995C /* SBJSON.h */,
+				7C801A0E12198D3700BE995C /* SBJsonBase.h */,
+				7C801A0F12198D3700BE995C /* SBJsonParser.h */,
+				7C801A1012198D3700BE995C /* SBJsonWriter.h */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		7C801A1112198D3700BE995C /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A1212198D3700BE995C /* NSObjectAddition.h */,
+				7C801A1312198D3700BE995C /* NSStreamAddition.h */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		7C801A1412198D3700BE995C /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A1512198D3700BE995C /* CXMLDocument.h */,
+				7C801A1612198D3700BE995C /* CXMLDocument_PrivateExtensions.h */,
+				7C801A1712198D3700BE995C /* CXMLElement.h */,
+				7C801A1812198D3700BE995C /* CXMLNode.h */,
+				7C801A1912198D3700BE995C /* CXMLNode_PrivateExtensions.h */,
+				7C801A1A12198D3700BE995C /* CXMLNode_XPathExtensions.h */,
+				7C801A1B12198D3700BE995C /* TouchXML.h */,
+			);
+			path = TouchXML;
+			sourceTree = "<group>";
+		};
+		7C801A1C12198D3700BE995C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A1D12198D3700BE995C /* INFSendBuffer.h */,
+				7C801A1E12198D3700BE995C /* INFSmartFoxEntities.h */,
+				7C801A1F12198D3700BE995C /* INFSmartFoxObjectSerializer.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		7C801A2012198D3700BE995C /* SFS Source */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A2112198D3700BE995C /* Data */,
+				7C801A2812198D3700BE995C /* Handlers */,
+				7C801A2C12198D3700BE995C /* Http */,
+				7C801A2E12198D3700BE995C /* INFSmartFoxiPhoneClient.m */,
+				7C801A2F12198D3700BE995C /* JSON */,
+				7C801A3612198D3700BE995C /* Mac */,
+				7C801A3912198D3700BE995C /* TouchXML */,
+				7C801A4012198D3700BE995C /* Util */,
+			);
+			name = "SFS Source";
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+		7C801A2112198D3700BE995C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A2212198D3700BE995C /* INFSmartFoxBuddy.m */,
+				7C801A2312198D3700BE995C /* INFSmartFoxRoom.m */,
+				7C801A2412198D3700BE995C /* INFSmartFoxRoomCreateParams.m */,
+				7C801A2512198D3700BE995C /* INFSmartFoxRoomVariable.m */,
+				7C801A2612198D3700BE995C /* INFSmartFoxUser.m */,
+				7C801A2712198D3700BE995C /* INFSmartFoxZone.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7C801A2812198D3700BE995C /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A2912198D3700BE995C /* INFSmartFoxExtHandler.m */,
+				7C801A2A12198D3700BE995C /* INFSmartFoxSFSEvent.m */,
+				7C801A2B12198D3700BE995C /* INFSmartFoxSysHandler.m */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		7C801A2C12198D3700BE995C /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A2D12198D3700BE995C /* SFSHttpConnection.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		7C801A2F12198D3700BE995C /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A3012198D3700BE995C /* NSObject+SBJSON.m */,
+				7C801A3112198D3700BE995C /* NSString+SBJSON.m */,
+				7C801A3212198D3700BE995C /* SBJSON.m */,
+				7C801A3312198D3700BE995C /* SBJsonBase.m */,
+				7C801A3412198D3700BE995C /* SBJsonParser.m */,
+				7C801A3512198D3700BE995C /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		7C801A3612198D3700BE995C /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A3712198D3700BE995C /* NSObjectAddition.m */,
+				7C801A3812198D3700BE995C /* NStreamAddition.m */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		7C801A3912198D3700BE995C /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A3A12198D3700BE995C /* CXMLDocument.m */,
+				7C801A3B12198D3700BE995C /* CXMLDocument_PrivateExtensions.m */,
+				7C801A3C12198D3700BE995C /* CXMLElement.m */,
+				7C801A3D12198D3700BE995C /* CXMLNode.m */,
+				7C801A3E12198D3700BE995C /* CXMLNode_PrivateExtensions.m */,
+				7C801A3F12198D3700BE995C /* CXMLNode_XPathExtensions.m */,
+			);
+			path = TouchXML;
+			sourceTree = "<group>";
+		};
+		7C801A4012198D3700BE995C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A4112198D3700BE995C /* INFSendBuffer.m */,
+				7C801A4212198D3700BE995C /* INFSmartFoxEntities.m */,
+				7C801A4312198D3700BE995C /* INFSmartFoxObjectSerializer.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		7C801A71121990F600BE995C /* Tarneeb Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C801A6C121990D900BE995C /* LogInViewController.h */,
+				7C801A6D121990D900BE995C /* LogInViewController.m */,
+				1D3623240D0F684500981E51 /* TarneebAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TarneebAppDelegate.m */,
+				7C5754D9121439EC007AEF4D /* DummyViewController.h */,
+				7C5754DA121439EC007AEF4D /* DummyViewController.m */,
+				7C801BA3121A8EF600BE995C /* RoomViewController.h */,
+				7C801BA4121A8EF600BE995C /* RoomViewController.m */,
+			);
+			name = "Tarneeb Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -606,6 +915,9 @@
 				7C8019DC1218443100BE995C /* 13-karo-high.png in Resources */,
 				7C8019DD1218443100BE995C /* 13-spade-high.png in Resources */,
 				7C8019DE1218443100BE995C /* 13-trefl-high.png in Resources */,
+				7C801A70121990D900BE995C /* LogInViewController.xib in Resources */,
+				7C801AC11219966A00BE995C /* config.xml in Resources */,
+				7C801BA7121A8EF600BE995C /* RoomViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +934,36 @@
 				7C5754D51211B081007AEF4D /* Deck.m in Sources */,
 				7C5754DC121439EC007AEF4D /* DummyViewController.m in Sources */,
 				7C03FE6712143DE800D258BD /* Game.m in Sources */,
+				7C801A4412198D3700BE995C /* INFSmartFoxBuddy.m in Sources */,
+				7C801A4512198D3700BE995C /* INFSmartFoxRoom.m in Sources */,
+				7C801A4612198D3700BE995C /* INFSmartFoxRoomCreateParams.m in Sources */,
+				7C801A4712198D3700BE995C /* INFSmartFoxRoomVariable.m in Sources */,
+				7C801A4812198D3700BE995C /* INFSmartFoxUser.m in Sources */,
+				7C801A4912198D3700BE995C /* INFSmartFoxZone.m in Sources */,
+				7C801A4A12198D3700BE995C /* INFSmartFoxExtHandler.m in Sources */,
+				7C801A4B12198D3700BE995C /* INFSmartFoxSFSEvent.m in Sources */,
+				7C801A4C12198D3700BE995C /* INFSmartFoxSysHandler.m in Sources */,
+				7C801A4D12198D3700BE995C /* SFSHttpConnection.m in Sources */,
+				7C801A4E12198D3700BE995C /* INFSmartFoxiPhoneClient.m in Sources */,
+				7C801A4F12198D3700BE995C /* NSObject+SBJSON.m in Sources */,
+				7C801A5012198D3700BE995C /* NSString+SBJSON.m in Sources */,
+				7C801A5112198D3700BE995C /* SBJSON.m in Sources */,
+				7C801A5212198D3700BE995C /* SBJsonBase.m in Sources */,
+				7C801A5312198D3700BE995C /* SBJsonParser.m in Sources */,
+				7C801A5412198D3700BE995C /* SBJsonWriter.m in Sources */,
+				7C801A5512198D3700BE995C /* NSObjectAddition.m in Sources */,
+				7C801A5612198D3700BE995C /* NStreamAddition.m in Sources */,
+				7C801A5712198D3700BE995C /* CXMLDocument.m in Sources */,
+				7C801A5812198D3700BE995C /* CXMLDocument_PrivateExtensions.m in Sources */,
+				7C801A5912198D3700BE995C /* CXMLElement.m in Sources */,
+				7C801A5A12198D3700BE995C /* CXMLNode.m in Sources */,
+				7C801A5B12198D3700BE995C /* CXMLNode_PrivateExtensions.m in Sources */,
+				7C801A5C12198D3700BE995C /* CXMLNode_XPathExtensions.m in Sources */,
+				7C801A5D12198D3700BE995C /* INFSendBuffer.m in Sources */,
+				7C801A5E12198D3700BE995C /* INFSmartFoxEntities.m in Sources */,
+				7C801A5F12198D3700BE995C /* INFSmartFoxObjectSerializer.m in Sources */,
+				7C801A6F121990D900BE995C /* LogInViewController.m in Sources */,
+				7C801BA6121A8EF600BE995C /* RoomViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,9 +1002,15 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/usr/include/**";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/usr/include/libxml2/;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+				);
 				PREBINDING = NO;
 				SDKROOT = iphoneos3.1.3;
 			};
@@ -673,10 +1021,16 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/usr/include/**";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/usr/include/libxml2/;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+				);
 				PREBINDING = NO;
 				SDKROOT = iphoneos3.1.3;
 			};

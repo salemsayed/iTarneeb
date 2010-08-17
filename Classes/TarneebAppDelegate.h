@@ -7,15 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
-@class DummyViewController;
+#import "INFSmartFoxISFSEvents.h"
+#import "INFSmartFoxSFSEvent.h"
 
-@interface TarneebAppDelegate : NSObject <UIApplicationDelegate> {
+@class INFSmartFoxiPhoneClient;
+
+@interface TarneebAppDelegate : NSObject <INFSmartFoxISFSEvents,UIApplicationDelegate> {
+	INFSmartFoxiPhoneClient *smartFox;	
+	
     UIWindow *window;
-	DummyViewController *view;	
+    UIViewController *oldViewController;
+    UIViewController *viewController;	
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet DummyViewController *view;
+@property (nonatomic, retain) IBOutlet INFSmartFoxiPhoneClient *smartFox;
+@property (nonatomic, retain) IBOutlet UIViewController *oldViewController;
+@property (nonatomic, retain) IBOutlet UIViewController *viewController;
+
+- (void)login:(NSString *)loginName;
+- (void)sendPublicMessage:(NSString *)message;
+- (void)switchToView:(NSString *)nibName uiViewController:(UIViewController *)uiViewController;
 
 @end
 
