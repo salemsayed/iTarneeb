@@ -1,0 +1,10 @@
+<SmartFoxTrisConfig>
+	<ip>192.168.0.3</ip>
+	<port>9339</port>
+	<blueBoxIpAddress>192.168.0.3</blueBoxIpAddress>
+	<blueBoxPort>8080</blueBoxPort>
+	<smartConnect>true</smartConnect>
+	<httpPort>8080</httpPort>
+	<httpPollSpeed>750</httpPollSpeed>
+	<zone>InfosferiPhoneOkeyServer</zone>
+</SmartFoxTrisConfig>
